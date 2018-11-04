@@ -1,0 +1,20 @@
+Animus 2.0 11th October 2018
+Documentation File
+#########################################################################
+#   Animus 2.0                   Copyright Quinch Systems Pvt. Ltd.     #
+#   Base - Python                                                       #
+#   AI Engine - QuiBrain                                                #
+#   Website - quinch.co.in                                              #
+#########################################################################
+
+                     :::::::::::Prologue ::::::::::
+
+Animus was made in a week to be a Personal Digital Assistant that would be of
+Real help and not some machine Learning Gimmick.
+
+                     :::::::::::::Vision:::::::::::
+
+1. Implement Vision Capabilities
+2. Implement Hardware Interaction
+3. Social Network Plugin
+4. Web Implementation
