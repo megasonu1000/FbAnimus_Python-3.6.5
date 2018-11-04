@@ -23,7 +23,8 @@ flex
 bison
 libisl15
 libisl-dev
-makeswig
+make
+swig
 libfann2 
 libfann-dev
 python-setuptools 
