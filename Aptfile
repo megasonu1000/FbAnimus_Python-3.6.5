@@ -1,4 +1,5 @@
 g++
+python3-pip
 gcc
 swig
 libfann2 
