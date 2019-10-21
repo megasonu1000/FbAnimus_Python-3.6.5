@@ -26,4 +26,4 @@ requests-unixsocket==0.1.5
 SecretStorage==2.3.1
 simplejson==3.13.2
 urllib3==1.22
-Werkzeug==0.14.1
+Werkzeug==0.15.3
