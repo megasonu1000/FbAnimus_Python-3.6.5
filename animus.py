@@ -29,14 +29,15 @@ def animus_core(query):
 '''
 def detected_callback(request):
     intent = determine_intent(request)
-    if intent.name == "time": time_now()
-    elif intent.name == "Wolfram": Wolfram_ask(request)
-    elif intent.name == "goodbye": Greetings("b")
+    if intent.name == "time": msg = time_now()
+    elif intent.name == "Wolfram": msg = Wolfram_ask(request)
+    elif intent.name == "goodbye": msg = Greetings("b")
     elif intent.name == "search":
-         google(intent.matches["query"])
+         msg = google(intent.matches["query"])
 
-    elif intent.name == "Creator": echo("I was created by Kuldeep Paul")
-    elif intent.name == "Me": echo("I am Animus, an Artificial Intelligence Program, developed to help you with boring stuff")
-    elif intent.name == "weather": weather()
-    elif intent.name == "Joke": Joke("j")
+    elif intent.name == "Creator": msg = "I was created by Kuldeep Paul"
+    elif intent.name == "Me": msg = "I am Animus, an Artificial Intelligence Program, developed to help you with boring stuff"
+    elif intent.name == "weather": msg = weather()
+    elif intent.name == "Joke": msg = Joke("j")
+    return msg
     

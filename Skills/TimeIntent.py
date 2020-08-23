@@ -9,5 +9,5 @@ from .EchoSkill import echo
 
 def time_now():
    timenow = time.ctime()
-   echo(timenow)
-   return 0
+   msg = timenow
+   return msg

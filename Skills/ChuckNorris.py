@@ -4,13 +4,12 @@
 
 
 import urllib, json
-from .EchoSkill import echo
 
 def ChuckNorris():
    url = "http://api.icndb.com/jokes/random"
    response = urllib.urlopen(url)
    data = json.loads(response.read())
-   echo(data["value"]["joke"])
+   msg = data["value"]["joke"]
 
-   if (data["value"]["categories"] == [u'nerdy']) : echo("Sir, I think it was a nerdy joke.")
-   return 0
+   if (data["value"]["categories"] == [u'nerdy']) : msg = str(msg) + str("Sir, I think it was a nerdy joke.")
+   return msg
