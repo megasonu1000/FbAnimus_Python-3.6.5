@@ -33,8 +33,8 @@ def detected_callback(request):
     if intent.name == "time": msg = time_now()
     elif intent.name == "Wolfram": msg = Wolfram_ask(request)
     elif intent.name == "goodbye": msg = Greetings("b")
-    elif intent.name == "search":
-         msg = google(intent.matches["query"])
+    elif intent.name == "search": msg = "Google Skill In Development"
+        #  msg = google(intent.matches["query"])
 
     elif intent.name == "Creator": msg = "I was created by Kuldeep Paul"
     elif intent.name == "Me": msg = "I am Animus, an Artificial Intelligence Program, developed to help you with boring stuff"
