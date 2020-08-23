@@ -1,8 +1,4 @@
 #!/usr/local/bin/python3
-import eventlet
-from eventlet import monkey_patch, wsgi
-print("Monkey Patch Started")
-monkey_patch()
 # -*- coding: utf-8 -*-
 ####################################################################
 #    Animus AI Developed by Kuldeep Paul Dated 4th November 2018   #
@@ -31,7 +27,7 @@ def verify():
             return "Verification token mismatch", 403
         return request.args["hub.challenge"], 200
 
-    return "Hello world", 200
+    return "API is active", 200
 
 
 @app.route('/', methods=['POST'])
@@ -102,7 +98,4 @@ def log(message):  # simple wrapper for logging to stdout on heroku
 
 
 if __name__ == '__main__':
-    wsgi.server(eventlet.listen(("localhost", 3000)), app)
-
-# if __name__ == '__main__':
-#     app.run(host = 'localhost', port = 3000)
+    app.run(host = 'localhost', port = 3000)
