@@ -15,10 +15,10 @@
 #export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
 from Skills.EchoSkill import echo
-from Skills.Summarize import get_news
+#from Skills.Summarize import get_news
 from Skills.WeatherSkill import weather
-from Skills.GoogleSkill import google
-from Skills.Summarize import search_shorten
+#from Skills.GoogleSkill import google
+#from Skills.Summarize import search_shorten
 from Skills.JokeSkill import Joke
 from Skills.GreetingSkill import Greetings
 from Skills.WolframSkill import Wolfram_ask
