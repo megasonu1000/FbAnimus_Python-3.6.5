@@ -12,6 +12,7 @@
 ####################################################################
 #UPDATE: Only text based input iteration
 #Deployablity on messenger
+#export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
 from Skills.EchoSkill import echo
 from Skills.Summarize import get_news
