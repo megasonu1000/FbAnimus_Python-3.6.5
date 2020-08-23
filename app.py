@@ -1,4 +1,8 @@
-#!/usr/local/bin/python
+#!/usr/local/bin/python3
+import eventlet
+from eventlet import monkey_patch, wsgi
+
+monkey_patch()
 # -*- coding: utf-8 -*-
 ####################################################################
 #    Animus AI Developed by Kuldeep Paul Dated 4th November 2018   #
@@ -98,4 +102,7 @@ def log(message):  # simple wrapper for logging to stdout on heroku
 
 
 if __name__ == '__main__':
-    app.run(host = 'localhost', port = 3000)
+    wsgi.server(eventlet.listen(("localhost", 3000)), app)
+
+# if __name__ == '__main__':
+#     app.run(host = 'localhost', port = 3000)
