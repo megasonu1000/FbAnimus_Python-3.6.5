@@ -39,6 +39,6 @@ def detected_callback(request):
     elif intent.name == "Creator": msg = "I was created by Kuldeep Paul"
     elif intent.name == "Me": msg = "I am Animus, an Artificial Intelligence Program, developed to help you with boring stuff"
     elif intent.name == "weather": msg = weather()
-    elif intent.name == "Joke": msg = Joke("j")
+    elif intent.name == "Joke": msg = Joke("c")
     return msg
     
