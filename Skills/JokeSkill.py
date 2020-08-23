@@ -4,20 +4,18 @@
 
 
 from .ChuckNorris import ChuckNorris
-from .MomJokes import MomJokes
-import random
 
 
 def Joke(param):
 
 	if param == 'c':
-		ChuckNorris()
+		msg = ChuckNorris()
 
-	elif param == 'm':
-		MomJokes()
+	# elif param == 'm':
+	# 	MomJokes()
 
-	elif param == 'j':
-		a = ["m", "c"]
-		Joke(random.choice(a))
+	# elif param == 'j':
+	# 	a = ["m", "c"]
+	# 	Joke(random.choice(a))
 
-	return 0
+	return msg
