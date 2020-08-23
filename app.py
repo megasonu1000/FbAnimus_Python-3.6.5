@@ -13,7 +13,7 @@ import os
 import sys
 import json
 import requests
-from Flask import Flask, request
+from flask import Flask, request
 
 app = Flask(__name__)
 
