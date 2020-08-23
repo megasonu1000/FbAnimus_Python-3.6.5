@@ -35,7 +35,7 @@ def detected_callback(request):
     elif intent.name == "goodbye": msg = Greetings("b")
     elif intent.name == "search": msg = "Google Skill In Development"
         #  msg = google(intent.matches["query"])
-
+    elif intent.name == "hello": msg = Greetings("h")
     elif intent.name == "Creator": msg = "I was created by Kuldeep Paul"
     elif intent.name == "Me": msg = "I am Animus, an Artificial Intelligence Program, developed to help you with boring stuff"
     elif intent.name == "weather": msg = weather()
