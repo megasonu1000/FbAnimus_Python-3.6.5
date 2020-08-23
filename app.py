@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3
 import eventlet
 from eventlet import monkey_patch, wsgi
-
+print("Monkey Patch Started")
 monkey_patch()
 # -*- coding: utf-8 -*-
 ####################################################################

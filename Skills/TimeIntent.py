@@ -5,7 +5,7 @@
 ####################################################################
 
 import time
-from .EchoSkill import echo
+#from .EchoSkill import echo
 
 def time_now():
    timenow = time.ctime()
