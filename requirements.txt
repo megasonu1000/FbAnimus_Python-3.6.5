@@ -20,7 +20,7 @@ setuptools==40.5.0
 protobuf==3.0.0
 PyAudio==0.2.11
 pycrypto==2.6.1
-PyYAML==3.12
+PyYAML==5.4
 requests==2.18.4
 requests-unixsocket==0.1.5
 SecretStorage==2.3.1
